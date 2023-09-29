@@ -1,0 +1,34 @@
+$main-fonts: "Bai Jamjuree", sans-serif;
+$p-color: #03020f;
+/* ============
+Generic styles
+================ */
+* {
+	font-family: $main-fonts;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0;
+}
+
+.row > * {
+	padding: 0;
+}
+p {
+	color: $p-color;
+}
+a {
+	text-decoration: none;
+}
+::-webkit-input-placeholder {
+	text-align: center;
+}
+/* ============
+Child Style Sheets
+================ */
+@import "navbar";
