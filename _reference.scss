@@ -1,0 +1,86 @@
+.reference {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+
+	h2 {
+		font-size: 3.4rem;
+		font-weight: 600;
+		line-height: 4rem;
+		padding: 0;
+		margin: 0;
+	}
+	&__a {
+		position: relative;
+		height: inherit;
+		display: block;
+		margin: 2rem;
+	}
+
+	&__box {
+		position: absolute;
+		width: 100%;
+		bottom: 2rem;
+		left: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: start;
+	}
+
+	&--title {
+		font-size: 1.7rem;
+		color: #aeaeae;
+		line-height: 2rem;
+		font-weight: 400;
+		margin-bottom: 8rem;
+	}
+
+	&--subtitle {
+		font-weight: 400;
+		font-size: 1.4rem;
+		color: #d2cece;
+		margin-top: 4rem;
+	}
+	&__img {
+		width: 100%;
+		padding: 0;
+	}
+	&__logo {
+		position: absolute;
+		width: 25rem;
+		left: -2rem;
+		bottom: -1rem;
+	}
+	&__btn {
+		font-size: 1.4rem;
+		line-height: 1.8rem;
+		color: #e30037;
+		padding: 1rem 2rem;
+		text-decoration: none;
+		border: 0.2rem solid #e30037;
+		font-weight: 600;
+	}
+}
+/* ===============
+Header M- Queries
+============== */
+@media screen and (max-width: 991px) {
+	.reference {
+		a {
+			margin-top: 2rem;
+		}
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.reference {
+		h2,
+		p {
+			text-align: center;
+		}
+	}
+	.mobil__version {
+		width: 95%;
+		margin: 0 auto;
+	}
+}

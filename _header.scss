@@ -1,0 +1,106 @@
+.header {
+	background-image: url(/img/pexels-flickr-149387.jpg);
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	position: relative;
+
+	h1 {
+		color: #fff;
+		font-weight: 600;
+		font-size: 4rem;
+		position: relative;
+	}
+	&__btn {
+		background-color: #e30037;
+		font-size: 1.4rem;
+		line-height: 1.8rem;
+		color: #fff;
+		padding: 1.5rem 2rem;
+		text-decoration: none;
+		position: relative;
+		font-weight: 700;
+		cursor: pointer;
+		border-radius: 0.3rem;
+		margin-top: 2rem;
+	}
+	&__icon {
+		width: 4rem;
+	}
+	&__video {
+		color: #e30037;
+		font-size: 2rem;
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		position: relative;
+		margin-left: 2rem;
+	}
+	&__video::before {
+		content: url("/img/icons8-play-48.png");
+		display: inline-block;
+	}
+}
+.header::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: linear-gradient(
+		to left,
+		rgba(231, 29, 29, 0) 0%,
+		rgb(3, 37, 80) 60%
+	);
+	z-index: 0;
+}
+/* ===============
+Header M- Queries
+============== */
+@media screen and (max-width: 575px) {
+	.header {
+		h1 {
+			font-size: 2.5rem;
+		}
+		&__btn {
+			font-size: 1.2rem;
+
+			padding: 1rem 1.5rem;
+			text-decoration: none;
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	.header {
+		h1 {
+			font-size: 2rem;
+		}
+		&__video {
+			font-size: 1.3rem;
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	.header {
+		h1 {
+			text-align: center;
+		}
+		&__video {
+			font-size: 1.3rem;
+		}
+		&__box {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+@media screen and (max-width: 300px) {
+	.header {
+		&__box {
+			margin: 2rem;
+		}
+		&__video {
+			margin-top: 2rem;
+		}
+	}
+}

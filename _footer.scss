@@ -1,0 +1,91 @@
+/* ===============
+    Footer 
+============== */
+.footer {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	h2 {
+		font-size: 1.4rem;
+		font-weight: 500;
+		line-height: 2rem;
+		padding-bottom: 1rem;
+		color: #acc3ff;
+	}
+	p {
+		font-size: 1.5rem;
+		line-height: 2.2rem;
+		color: #acc3ff;
+	}
+}
+
+/* ===============
+Footer -light-blue
+============== */
+
+.footer--lightBlue {
+	background-color: #13307e;
+
+	&__box {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+	&__img {
+		margin-bottom: 2rem;
+	}
+}
+/* ===============
+Footer -dark-blue
+============== */
+.footer--darkBlue {
+	background-color: rgb(14, 28, 72);
+}
+/* ===============
+Footer -light
+============== */
+.footer--light {
+	background-color: #f7f7f7;
+
+	img {
+		width: 5rem;
+	}
+	p {
+		margin-top: 0.5rem;
+		color: #aeaeae;
+	}
+	&__logo {
+		margin-top: 0.5rem;
+		-webkit-filter: invert(100%); /* Safari/Chrome */
+		filter: invert(100%);
+	}
+	&__ikon {
+		-webkit-filter: invert(100%); /* Safari/Chrome */
+		filter: invert(100%);
+	}
+}
+/* ===============
+Header M- Queries
+============== */
+@media screen and (max-width: 991px) {
+	.footer__box {
+		margin-bottom: 5rem;
+	}
+}
+@media screen and (max-width: 575px) {
+	.footer__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer--lightBlue {
+		padding: 2rem;
+		padding-right: 2rem;
+		&__img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	p {
+		text-align: center;
+	}
+}

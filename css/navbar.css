@@ -55,6 +55,10 @@
   border-bottom: 0.2rem solid red;
 }
 
+.navbar__item:hover .multiple {
+  visibility: unset;
+}
+
 .nav-link {
   display: flex !important;
   align-items: center !important;
@@ -75,6 +79,7 @@ Multiple navbar
   flex-wrap: wrap;
   background-color: #fff;
   transition: all 0.3s case 0s;
+  visibility: hidden;
 }
 .multiple-nav {
   display: flex;

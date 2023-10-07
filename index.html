@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/css/style.css" />
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -16,17 +15,18 @@
 			href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="/css/style.css" />
 
-		<title>Document</title>
+		<title>Mondo</title>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 			crossorigin="anonymous"
 		></script>
-		<script src="script.js" defer></script>
 	</head>
 	<body>
 		<header>
+			<!-- navbar -->
 			<div class="heroNavbar">
 				<div class="container">
 					<div class="d-flex justify-content-between">
@@ -37,21 +37,17 @@
 						<a class="heroNavbar__p heroNavbar__p--center">
 							Kompresové stanice na míru již 25 let
 						</a>
-						<div class="heroNavbar--item heroNavbar-diasepear">
-							<a class="heroNavbar__p heroNavbar-diasepear">777 456 456</a>
-							<a class="heroNavbar__p heroNavbar-diasepear">
-								Zákaznická linka Po-Pá 8-17
-							</a>
+						<div class="heroNavbar--item">
+							<a class="heroNavbar__p heroNavbar-tel">777 456 456</a>
+							<a class="heroNavbar__p"> Zákaznická linka Po-Pá 8-17 </a>
 						</div>
-						<div
-							class="heroNavbar--item heroNavbar--item-lupa heroNavbar-diasepear"
-						>
-							<a class="heroNavbar__p heroNavbar-diasepear">777 456 456</a>
-							<a class="heroNavbar__p heroNavbar-diasepear">Havarijní servis</a>
+						<div class="heroNavbar--item heroNavbar--item-lupa">
+							<a class="heroNavbar__p heroNavbar-tel">777 456 456</a>
+							<a class="heroNavbar__p">Havarijní servis</a>
 						</div>
 						<div class="heroNavbar--container-btn">
 							<img
-								class="heroNavbar__img-icon heroNavbar-diasepear"
+								class="heroNavbar__img-icon"
 								src="img/tabler-icon-search.png"
 							/>
 
@@ -60,7 +56,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- second navbar -->
+			<!-- multi navbar -->
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-light">
 					<button
@@ -83,132 +79,184 @@
 								<a href="#" class="nav-link">KOMPRESORY </a>
 								<div class="multiple">
 									<ul class="multiple-nav">
-										<li>
-											<div class="multiple__container">
-												<img src="/img/Video.png" class="multiple__picture" />
-												<div class="multiple__container-p">
-													<a href="#" class="multiple__p-red">Mattei Maxima</a>
+										<li class="col col-3">
+											<div class="multiple__item">
+												<div class="d-flex justify-content-around">
+													<div class="d-flex align-items-center">
+														<div class="multiple__picture">
+															<img
+																src="/img/Video.png"
+																class="multiple__picture"
+															/>
+														</div>
+													</div>
+													<div class="multiple__description">
+														<a href="#" class="">Mattei Maxima</a>
 
-													<p class="multiple__p">
-														Stručný popis podkategorie<br />
-														pro lepší pochopení Lorem<br />
-														ipsum
-													</p>
+														<p class="multiple__p">
+															Stručný popis podkategorie pro lepší pochopení
+															Lorem ipsum
+														</p>
+													</div>
 												</div>
 											</div>
 										</li>
-										<li>
-											<div class="multiple__container">
-												<img src="/img/Video.png" class="multiple__picture" />
-												<div class="multiple__container-p">
-													<a href="#" class="multiple__p-red">Mattei Optima</a>
-													<p class="multiple__p">
-														Stručný popis podkategorie <br />pro lepší pochopení
-													</p>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="multiple__container multiple__container-wrap">
-												<a href="#" class="multiple__p-red">Mattei ERC</a>
-												<p class="multiple__p">
-													Stručný popis podkategorie<br />
-													pro lepší pochopení
-												</p>
-											</div>
-										</li>
-										<li>
-											<div class="multiple__container multiple__container-wrap">
-												<a href="#" class="multiple__p-red"
-													>Mattei Air Center</a
-												>
-												<p class="multiple__p">
-													Stručný popis podkategorie<br />
-													pro lepší pochopení
-												</p>
-											</div>
-										</li>
+										<li class="col col-3">
+											<div class="multiple__item">
+												<div class="d-flex justify-content-around">
+													<div class="d-flex align-items-center">
+														<div class="multiple__picture">
+															<img
+																src="/img/Video.png"
+																class="multiple__picture"
+															/>
+														</div>
+													</div>
+													<div class="multiple__description">
+														<a href="#" class="">Mattei Optima</a>
 
-										<li>
-											<div class="multiple__container multiple-box">
-												<div class="multiple--diseablePciture"></div>
-												<div
-													class="multiple__container-p multiple__container-item"
-												>
-													<a href="#" class="multiple__p-red">Mattei Blade</a>
-													<p class="multiple__p">
-														Stručný popis podkategorie<br />
-														pro lepší pochopení Lorem<br />
-														ipsum
-													</p>
+														<p class="multiple__p">
+															Stručný popis podkategorie pro lepší pochopení
+														</p>
+													</div>
 												</div>
 											</div>
 										</li>
-										<li>
-											<div class="multiple__container multiple-box">
-												<div class="multiple--diseablePciture"></div>
-												<div class="multiple__container-items">
-													<a href="#" class="multiple__p-red">Second Hand</a>
-													<p class="multiple__p">
-														Stručný popis podkategorie<br />
-														pro lepší pochopení
-													</p>
+										<li class="col col-3">
+											<div class="multiple__item">
+												<div class="d-flex justify-content-around">
+													<div class="d-flex align-items-center">
+														<div class="multiple__picture"></div>
+													</div>
+													<div class="multiple__description">
+														<a href="#" class="">Mattei ERC</a>
+
+														<p class="multiple__p">
+															Stručný popis podkategorie pro lepší pochopení
+														</p>
+													</div>
 												</div>
 											</div>
 										</li>
-										<li>
-											<div
-												class="multiple__container multiple__container-wrap multiple-box"
-											>
-												<div
-													class="multiple__container-p multiple__container-b"
-												>
-													<a href="#" class="multiple__p-red">půjčovna</a>
-													<p class="multiple__p">
-														Stručný popis podkategorie <br />
-														pro lepší pochopení
-													</p>
+										<li class="col col-3">
+											<div class="multiple__item">
+												<div class="d-flex justify-content-around">
+													<div class="d-flex align-items-center">
+														<div class="multiple__picture"></div>
+													</div>
+													<div class="multiple__description">
+														<a href="#" class="">Mattei Air Center</a>
+
+														<p class="multiple__p">
+															Stručný popis podkategorie pro lepší pochopení
+														</p>
+													</div>
 												</div>
 											</div>
 										</li>
-										<li>
-											<div
-												class="multiple__container multiple__container-wrap multiple-box"
-											>
-												<a href="#"></a>
-												<p class="multiple__p multiple__p-hidden">
-													chchgcvhvhjvhjvchjvh
-												</p>
+										<li class="col col-3">
+											<div class="multiple__item">
+												<div class="d-flex justify-content-around">
+													<div class="d-flex align-items-center">
+														<div class="multiple__picture"></div>
+													</div>
+													<div class="multiple__description">
+														<a href="#" class="">Mattei Blade</a>
+
+														<p class="multiple__p">
+															Stručný popis podkategorie pro lepší pochopení
+															Lorem ipsum
+														</p>
+													</div>
+												</div>
 											</div>
 										</li>
-										<li>
-											<div class="multiple__container multiple-box">
-												<img src="/img/Video.png" class="multiple__picture" />
-												<a href="#" class="multiple-a multiple__p-red"
-													>Proč kompresory Mattei</a
-												>
+										<li class="col col-3">
+											<div class="multiple__item">
+												<div class="d-flex justify-content-around">
+													<div class="d-flex align-items-center">
+														<div class="multiple__picture"></div>
+													</div>
+													<div class="multiple__description">
+														<a href="#" class="">Second Hand</a>
+
+														<p class="multiple__p">
+															Stručný popis podkategorie pro lepší pochopení
+														</p>
+													</div>
+												</div>
 											</div>
 										</li>
-										<li>
-											<div
-												class="multiple__container multiple__container-box multiple-box"
-											>
-												<img src="/img/Video.png" class="multiple__picture" />
-												<a href="#" class="multiple-a multiple__p-red"
-													>Pístové vs.lamelové <br />
-													kompresory</a
-												>
+										<li class="col col-3">
+											<div class="multiple__item">
+												<div class="d-flex justify-content-around">
+													<div class="d-flex align-items-center">
+														<div class="multiple__picture"></div>
+													</div>
+													<div class="multiple__description">
+														<a href="#" class="">Pujcovna</a>
+
+														<p class="multiple__p">
+															Stručný popis podkategorie pro lepší pochopení
+														</p>
+													</div>
+												</div>
 											</div>
 										</li>
-										<li>
-											<div
-												class="multiple__container multiple__container-box multiple-box"
-											>
-												<img src="/img/Video.png" class="multiple__picture" />
-												<a href="#" class="multiple-a multiple__p-red"
-													>Proč si vybrat naši<br />
-													firmu</a
-												>
+									</ul>
+
+									<ul class="multiple-nav">
+										<li class="col col-3">
+											<div class="multiple__item">
+												<div class="d-flex justify-content-around">
+													<div class="d-flex align-items-center">
+														<div class="multiple__picture">
+															<img
+																src="/img/Video.png"
+																class="multiple__picture"
+															/>
+														</div>
+													</div>
+													<div class="multiple__description">
+														<a href="#" class="">Proč kompresory Mattei</a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="col col-3">
+											<div class="multiple__item">
+												<div class="d-flex justify-content-around">
+													<div class="d-flex align-items-center">
+														<div class="multiple__picture">
+															<img
+																src="/img/Video.png"
+																class="multiple__picture"
+															/>
+														</div>
+													</div>
+													<div class="multiple__description">
+														<a href="#" class=""
+															>Pístové vs.lamelové kompresory</a
+														>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="col col-3">
+											<div class="multiple__item">
+												<div class="d-flex justify-content-around">
+													<div class="d-flex align-items-center">
+														<div class="multiple__picture">
+															<img
+																src="/img/Video.png"
+																class="multiple__picture"
+															/>
+														</div>
+													</div>
+													<div class="multiple__description">
+														<a href="#" class="">Proč si vybrat naši firmu</a>
+													</div>
+												</div>
 											</div>
 										</li>
 									</ul>
@@ -216,7 +264,9 @@
 							</li>
 
 							<li class="navbar__item nav-li">
-								<a href="#" class="nav-link">ÚPRAVA STLAČENÉHO VZDUCH</a>
+								<a href="/link.html" class="nav-link"
+									>ÚPRAVA STLAČENÉHO VZDUCH</a
+								>
 							</li>
 							<li class="navbar__item nav-li">
 								<a href="#" class="nav-link">SLUŽBY A SERVIS</a>
@@ -238,5 +288,539 @@
 				</nav>
 			</div>
 		</header>
+		<!-- Header-->
+		<section>
+			<div class="header mobile__version">
+				<div class="header__background--color">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="header__title">
+									<h1>Profesionální kompresorové stanice a úprava vzduchu</h1>
+									<div class="header__box row align-items-center">
+										<div class="col-auto">
+											<a class="header__btn">KATALOG KOMPRESORŮ</a>
+										</div>
+										<div class="col-auto">
+											<a class="header__video">Přehrát video</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Description reseni na klic -->
+		<section>
+			<div class="description mobil__version">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2>Originální řešení na klíč od roku 1992</h2>
+							<p>
+								Firma MONDO s.r.o. byla založena v prosinci roku 1992 dvěma
+								společníky. Od roku 1993 jsme autorizovaným obchodním a
+								servisním střediskem americké firmy SPX Flow Inc. Od roku 1996
+								jsme autorizovaným obchodním a servisním střediskem firmy Ing.
+								Enea Mattei S.p.A., předního výrobce rotačních lamelových
+								kompresorů pro stlačený vzduch. V roce 1997 byl zahájen
+								systematický vývoj a výroba originálních kompresorů pro kolejová
+								vozidla založené na technologii rotačních kompresorů Mattei.
+							</p>
+						</div>
+						<div class="col-md-6 col-xs-12 d-flex">
+							<ul>
+								<li class="d-flex align-items-center">
+									<p class="description--number">1</p>
+									<p class="description__p">Konzultace a analýza</p>
+									<img class="description__arrow" src="/img/arrow.png" />
+								</li>
+								<li class="d-flex align-items-center">
+									<p class="description--number">2</p>
+									<p class="description__p">Montáž a zaškolení</p>
+									<img class="description__arrow" src="/img/arrow.png" />
+								</li>
+								<li class="d-flex align-items-center">
+									<p class="description--number">3</p>
+									<p class="description__p">Servis a údržba</p>
+									<img class="description__arrow" src="/img/arrow.png" />
+								</li>
+
+								<li class="d-flex align-items-center">
+									<p class="description--number">4</p>
+									<p class="description__p">Výroba a konstrukce</p>
+									<img class="description__arrow" src="/img/arrow.png" />
+								</li>
+								<li class="d-flex align-items-center">
+									<p class="description--number">5</p>
+									<p class="description__p">Výpočet a návrh řešení</p>
+									<img class="description__arrow" src="/img/arrow.png" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Hlavní kategorie -->
+		<section>
+			<div class="main__category mobil__version">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-xs-12">
+							<h2>Hlavní kategorie</h2>
+							<p>ČEMU SE PŘEDEVŠÍM VĚNUJEME?</p>
+						</div>
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="main__category--box">
+									<a>
+										<h3>Lamelové kompresory Mattei</h3>
+										<img
+											class="main__category--picture"
+											src="/img/_com.apple.Pasteboard.RtTXJs.png"
+										/>
+										<img class="main__category--arrow" src="/img/arrow.png" />
+									</a>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="main__category--box">
+									<a>
+										<h3>Úprava vzduchu Hankison</h3>
+										<img
+											class="main__category--picture"
+											src="/img/_com.apple.Pasteboard.RtTXJs.png"
+										/>
+										<img class="main__category--arrow" src="/img/arrow.png" />
+									</a>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4">
+								<div class="main__category--box">
+									<a>
+										<h3>Aplikace na míru</h3>
+										<img
+											class="main__category--picture"
+											src="/img/_com.apple.Pasteboard.RtTXJs.png"
+										/>
+										<img class="main__category--arrow" src="/img/arrow.png" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- reference -->
+		<section>
+			<div class="reference mobil__version">
+				<div class="container">
+					<h2>Reference</h2>
+					<p class="reference--title">Čemu se především věnujeme</p>
+
+					<div class="row pb-5">
+						<div class="col-12 col-md-6 col-lg-4">
+							<a class="reference__a">
+								<img
+									class="reference__img"
+									src="/img/pexels-thisisengineering-3912944.jpg"
+								/>
+								<div class="reference__box d-flex justify-content-center">
+									<img
+										class="reference__logo reference__logo-blue"
+										src="/img/technistone-1.png"
+									/>
+									<p class="reference--subtitle reference--subtitle-blue">
+										Dodávka kompresorů českýmm drahám
+									</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-12 col-md-6 col-lg-4">
+							<a class="reference__a">
+								<img
+									class="reference__img"
+									src="/img/pexels-anthony-macajone-1784758.jpg"
+								/>
+								<div class="reference__box">
+									<img
+										class="reference__logo reference__logo-grey"
+										src="/img/technistone-1.png"
+									/>
+									<p class="reference--subtitle reference--subtitle-grey">
+										Dodávka kompresorů pro TechniStone
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<a class="reference__a">
+								<img
+									src="/img/pexels-eva-bronzini-7605371.jpg"
+									class="reference__img"
+								/>
+								<div class="reference__box">
+									<img
+										class="reference__logo reference__logo-red"
+										src="/img/technistone-1.png"
+									/>
+									<p class="reference--subtitle reference--subtitle-red">
+										Dodávka kompresorů pro firmu Algamo
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row pt-5">
+					<div class="d-flex justify-content-center">
+						<a class="reference__btn">VŠECHNY REFERENCE</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- sekce new -->
+		<section>
+			<div class="new mobil__version">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div>
+								<h2>Novinky</h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6 col-xs-12">
+							<div class="new__wrap">
+								<img class="new--picture" src="/img/Mask Group 9.png" />
+
+								<div class="new__box d-flex">
+									<div class="col">
+										<a class="new__btn">Štítek</a>
+									</div>
+									<a class="new__a--tag">
+										MONDO s.r.o. v době vyhlášení karantény v České republice
+									</a>
+									<div class="d-flex justify-content-between">
+										<p class="new--date">6.6.2020</p>
+										<div class="new__article--box">
+											<a class="new__article-tag">CELÝ ČLÁNEK</a>
+											<img class="new__arrow" src="/img/arrow.png" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xs-12">
+							<div class="new__wrap">
+								<img class="new--picture" src="/img/Mask Group 9.png" />
+
+								<div class="new__box d-flex">
+									<div class="col">
+										<a class="new__btn">Štítek</a>
+									</div>
+									<a class="new__a--tag">
+										MONDO s.r.o. v době vyhlášení karantény v České republice
+									</a>
+									<div class="d-flex justify-content-between">
+										<p class="new--date">6.6.2020</p>
+										<div class="new__article--box">
+											<a class="new__article-tag">CELÝ ČLÁNEK</a>
+											<img class="new__arrow" src="/img/arrow.png" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pt-5">
+					<div class="d-flex justify-content-center">
+						<a class="new__btn--red">VŠECHNY NOVINKY</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- sekce nase kompresory -->
+		<section>
+			<div class="compressors mobil__version">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-xs-12 d-flex align-items-center">
+							<div class="compressors__content">
+								<h2>Jak fungují naše kompresory</h2>
+								<p>PODÍVEJTE SE NA VIDEO</p>
+
+								<div class="compressors__btn--box">
+									<a class="compressors__btn">KATALOG KOMPRESORŮ</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xs-12">
+							<img src="/img/maxresdefault (-1.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<main>
+			<!-- Section contact -->
+			<section>
+				<div class="contact mobil__version">
+					<div class="container">
+						<div class="contact__box">
+							<div class="contact--item">
+								<h2>Kontakty</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-12 col-xs-12">
+										<div class="d-flex">
+											<div class="contact__img">
+												<img src="/img/Rectangle 803.png" />
+											</div>
+											<div>
+												<h3>Jan Balíček</h3>
+												<p class="contact__p">Zákaznická podpora</p>
+												<p class="contact__p">777 456 456</p>
+												<p class="contact__p">info.balicek@mondo.cz</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-12 col-xs-12">
+										<div class="d-flex">
+											<div class="contact__img">
+												<img src="/img/Rectangle 803.png" />
+											</div>
+											<div>
+												<h3>Jan Balíček</h3>
+												<p class="contact__p">Zákaznická podpora</p>
+												<p class="contact__p">777 456 456</p>
+												<p class="contact__p">info.balicek@mondo.cz</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="contact--item">
+								<h2>Pobočky</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-12 col-xs-12">
+										<div class="d-flex">
+											<div class="contact__img">
+												<img src="/img/Rectangle 802.png" />
+											</div>
+											<div>
+												<h3>Mondo Čechy</h3>
+												<p class="contact__p">Vážní 899</p>
+												<p class="contact__p">500 03 Hradec Králové</p>
+												<p class="contact__p">Czech Republic</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-12 col-xs-12">
+										<div class="d-flex">
+											<div class="contact__img">
+												<img src="/img/Rectangle 802.png" />
+											</div>
+											<div class="contact__wrap">
+												<h3>Mondo Morava</h3>
+												<p class="contact__p">Vážní 899</p>
+												<p class="contact__p">500 03 Hradec Králové</p>
+												<p class="contact__p">Czech Republic</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<form class="contact--form d-flex">
+								<div class="row">
+									<h4>Napiště nám</h4>
+									<p class="contact--form__p">
+										Potřebujete poradit s výběrem nového kompresoru?
+									</p>
+									<p class="contact--form__p">Rádi vám poradíme</p>
+									<div class="contact--form-name">
+										<input type="text" placeholder="Jméno a příjmení" />
+									</div>
+									<div><input type="number" placeholder="Telefon" /></div>
+									<div>
+										<input
+											type="email"
+											class="form-control"
+											id="exampleFormControlInput1"
+											placeholder="E-mail"
+										/>
+									</div>
+
+									<textarea
+										class="form-control"
+										id="exampleFormControlTextarea1"
+										rows="3"
+									>
+	 Vaše zpráva pro nás</textarea
+									>
+
+									<p class="contact--form__private">
+										Odesláním formuláře souhlasíte s
+										<span>zpracováním osobních údajů</span>
+									</p>
+									<div>
+										<button>ODESLAT</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- footer -->
+		<footer>
+			<!-- footer -light-blue-->
+			<div class="footer footer--lightBlue mobil__version">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-xs-12">
+							<div class="footer--lightBlue__img">
+								<img src="/img/Path 2042.png" />
+							</div>
+							<div class="footer__box">
+								<h2>ENERGETICKÁ ÚSPORNOST</h2>
+								<p>
+									Vysoká objemová účinnost, mechanická účinnost a nízké otáčky
+									umožňují úspory energie o více než 15 % ve srovnání s jinými
+									rotačními kompresory.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-xs-12">
+							<div class="footer--lightBlue__img">
+								<img src="/img/Path 2042.png" />
+							</div>
+							<div class="footer__box">
+								<h2>24/7 SERVIS</h2>
+								<p>
+									Jsme na českém trhu už od roku 2014. Lorem ipsum, dolor sit
+									amet consectetur adipisicing elit. Quasi totam eius illum eos
+									quae, eveniet quaerat nemo.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-xs-12">
+							<div class="footer--lightBlue__img">
+								<img src="/img/Path 2042.png" />
+							</div>
+
+							<div class="footer__box">
+								<h2>6 LET ZÁRUKA</h2>
+								<p>
+									Jsme na českém trhu už od roku 2014. Lorem ipsum, dolor sit
+									amet consectetur adipisicing elit. Quasi totam eius illum eos
+									quae, eveniet quaerat nemo.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-xs-12">
+							<div class="footer--lightBlue__img">
+								<img src="/img/Path 2042.png" />
+							</div>
+
+							<div class="footer__box">
+								<h2>SERVIS OD A DO Z</h2>
+								<p>
+									Jsme na českém trhu už od roku 2014. Lorem ipsum, dolor sit
+									amet consectetur adipisicing elit. Quasi totam eius illum eos
+									quae, eveniet quaerat nemo.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer -dakr-blue-->
+			<div class="footer footer--darkBlue mobil__version">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-4 col-sm-6">
+							<div class="footer__box">
+								<h2>PRODUKTY</h2>
+
+								<p>+44 345 678 903</p>
+								<p>adobexd@mail.com</p>
+								<p>Find a store</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-4 col-sm-6">
+							<div class="footer__box">
+								<h2>ŘWŠENÍ DLE OBORU</h2>
+
+								<p>Contact Us</p>
+								<p>Ordering & Payment</p>
+								<p>Returns</p>
+								<p>FAQ</p>
+							</div>
+						</div>
+
+						<div class="col-lg-2 col-md-4 col-sm-6">
+							<div class="footer__box">
+								<h2>SLUŽBY A SERVIS</h2>
+								<p>Konzultace a analýza</p>
+								<p>Výpočet a návrh řešení</p>
+								<p>Výroba Konstrukce</p>
+								<p>Montáž a zaškolení</p>
+								<p>Press Servis a údržba</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-4 col-sm-6">
+							<div class="footer__box">
+								<h2>ANALÝZA A MĚŘENÍ</h2>
+								<p>+44 345 678 903</p>
+								<p>adobexd@mail.com</p>
+								<p>Find a Store</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-4 col-sm-6">
+							<div class="footer__box">
+								<h2>SLUŽBY A SERVIS</h2>
+								<p>About Adobe XD Kit/p></p>
+								<p>Work With US</p>
+								<p>Privacy Policy</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-4 col-sm-6">
+							<div class="footer__box">
+								<h2>ANALÝZA A MĚŘENÍ</h2>
+								<p>+44 345 678 903</p>
+								<p>adobexd@mail.com</p>
+								<p>Find a Store</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Patička-->
+			<div class="footer--light mobil__version">
+				<div class="container d-flex justify-content-between">
+					<div class="footer--light__ikon">
+						<img src="/img/pngegg-2.png" />
+					</div>
+					<div>
+						<p>Ochrana osobních údajů</p>
+					</div>
+					<div class="footer--light__logo">
+						<img src="/img/technistone-1.png" />
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
