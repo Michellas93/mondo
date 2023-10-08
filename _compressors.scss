@@ -16,19 +16,11 @@
 		color: #aeaeae;
 		font-size: 1.2rem;
 		line-height: 1.8rem;
-		margin-bottom: 6rem;
 		margin-top: 0.5rem;
 	}
-	&__btn {
-		font-size: 1.5rem;
-		background-color: #e30037;
-		color: #ddd6d6;
-		padding: 1.7rem 3rem;
-		text-decoration: none;
-		font-weight: 600;
-		border-radius: 0.3rem;
+	&__btn--box {
+		margin-top: 4rem;
 	}
-
 	img {
 		width: 100%;
 	}
@@ -53,7 +45,7 @@ Header M- Queries
 		p {
 			text-align: center;
 		}
-		&__btn {
+		.btn {
 			padding: 1.5rem 2rem;
 			font-size: 1.2rem;
 		}

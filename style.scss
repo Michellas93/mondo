@@ -16,9 +16,6 @@ body {
 	margin: 0rem;
 }
 
-.row > * {
-	padding: 0;
-}
 p {
 	color: $p-color;
 	margin-bottom: 0;
@@ -28,6 +25,25 @@ a {
 }
 ::-webkit-input-placeholder {
 	text-align: center;
+}
+.btn {
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	text-align: center;
+	padding: 1.5rem 2rem;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 0.3rem;
+	text-decoration: none;
+}
+.btn--red {
+	background-color: #e30037;
+	color: #fff;
+}
+.btn--white {
+	background-color: #fff;
+	border: 0.2rem solid #e30037;
+	color: #e30037;
 }
 
 /* ============
@@ -42,3 +58,4 @@ Child Style Sheets
 @import "_reference.scss";
 @import "_compressors.scss";
 @import "_new.scss";
+@import "_photogalerie.scss";

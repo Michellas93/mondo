@@ -8,13 +8,17 @@
 		font-weight: 600;
 		font-size: 34px;
 		line-height: 40px;
-		margin: 0;
 		color: #fff;
 		position: relative;
 		font-weight: 700;
 	}
 	h3 {
-		font-weight: 600;
+		text-align: center;
+		font-size: 2rem;
+		color: #0a1c4b;
+		font-weight: 700;
+		line-height: 2.6rem;
+		margin-top: 3rem;
 	}
 	p {
 		color: #fff;
@@ -23,7 +27,6 @@
 	a {
 		background-color: #fff;
 		position: relative;
-		padding: 2rem;
 		display: block;
 		height: inherit;
 		width: 100%;
@@ -39,13 +42,13 @@
 		border-radius: 0.3rem;
 		background-color: #fff;
 		height: 26rem;
-		padding: 2rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;
-		margin: 3rem;
-		padding: 2rem;
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+		margin-right: 4rem;
 	}
 	&--arrow {
 		width: 3rem;
@@ -54,7 +57,6 @@
 		right: 5rem;
 	}
 }
-
 .main__category::before {
 	content: "";
 	position: absolute;
@@ -73,9 +75,6 @@ Header M- Queries
 ============== */
 @media screen and (max-width: 1199px) {
 	.main__category {
-		&--box {
-			margin: 3rem;
-		}
 		&--arrow {
 			width: 2rem;
 			right: 3rem;
@@ -83,13 +82,6 @@ Header M- Queries
 	}
 }
 
-@media screen and (max-width: 991px) {
-	.main__category {
-		&--box {
-			margin: 3rem;
-		}
-	}
-}
 @media screen and (max-width: 750px) {
 	.main__category {
 		&--arrow {
@@ -103,7 +95,7 @@ Header M- Queries
 		}
 
 		&--picture {
-			width: 17rem;
+			width: 15rem;
 		}
 	}
 }

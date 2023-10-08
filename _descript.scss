@@ -42,7 +42,6 @@
 		border: 0.3px solid #dedbdb;
 		border-radius: 80%;
 		padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-
 		font-weight: bold;
 		margin-left: 5rem;
 		margin-right: 5rem;
@@ -65,13 +64,13 @@ Header M- Queries
 ============== */
 @media screen and (max-width: 750px) {
 	.description {
-		p,
-		h2 {
-			padding-left: 2rem;
-			padding-right: 2rem;
-		}
-		h2 {
+		h2,
+		p {
 			text-align: center;
+		}
+		&--number {
+			border-radius: 90%;
+			padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 		}
 	}
 }
@@ -81,7 +80,10 @@ Header M- Queries
 			font-size: 2.5rem;
 		}
 		&--number {
-			margin-right: 0;
+			margin-right: 2rem;
 		}
+	}
+	.description li:hover > .description__arrow {
+		display: none;
 	}
 }

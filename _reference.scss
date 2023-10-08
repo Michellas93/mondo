@@ -1,6 +1,6 @@
 .reference {
 	padding-top: 10rem;
-	padding-bottom: 10rem;
+	padding-bottom: 5rem;
 
 	h2 {
 		font-size: 3.4rem;
@@ -13,7 +13,6 @@
 		position: relative;
 		height: inherit;
 		display: block;
-		margin: 2rem;
 	}
 
 	&__box {
@@ -25,6 +24,9 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		align-items: start;
+	}
+	&__button {
+		margin-top: 5rem;
 	}
 
 	&--title {
@@ -50,15 +52,6 @@
 		width: 25rem;
 		left: -2rem;
 		bottom: -1rem;
-	}
-	&__btn {
-		font-size: 1.4rem;
-		line-height: 1.8rem;
-		color: #e30037;
-		padding: 1rem 2rem;
-		text-decoration: none;
-		border: 0.2rem solid #e30037;
-		font-weight: 600;
 	}
 }
 /* ===============

@@ -1,7 +1,7 @@
 .header {
 	background-image: url(/img/pexels-flickr-149387.jpg);
-	padding-top: 10rem;
-	padding-bottom: 10rem;
+	padding-top: 13rem;
+	padding-bottom: 13rem;
 	position: relative;
 
 	h1 {
@@ -10,18 +10,12 @@
 		font-size: 4rem;
 		position: relative;
 	}
-	&__btn {
-		background-color: #e30037;
-		font-size: 1.4rem;
-		line-height: 1.8rem;
-		color: #fff;
-		padding: 1.5rem 2rem;
-		text-decoration: none;
+	.btn {
 		position: relative;
-		font-weight: 700;
-		cursor: pointer;
-		border-radius: 0.3rem;
-		margin-top: 2rem;
+	}
+	&__box {
+		display: flex;
+		margin-top: 10rem;
 	}
 	&__icon {
 		width: 4rem;
@@ -39,6 +33,9 @@
 	&__video::before {
 		content: url("/img/icons8-play-48.png");
 		display: inline-block;
+		height: 4.8rem;
+		width: auto;
+		margin-right: 1rem;
 	}
 }
 .header::before {
@@ -62,11 +59,9 @@ Header M- Queries
 		h1 {
 			font-size: 2.5rem;
 		}
-		&__btn {
+		.btn {
 			font-size: 1.2rem;
-
 			padding: 1rem 1.5rem;
-			text-decoration: none;
 		}
 	}
 }

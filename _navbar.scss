@@ -22,13 +22,9 @@
 		padding-right: 10rem;
 	}
 	&--btn {
-		border: 2px solid #e30037;
-		background-color: #e30037;
-		color: #fff;
-		font-size: 1.4rem;
-		font-weight: 700;
 		padding: 1.5rem 2rem;
 		border-radius: 0.3rem;
+		border: none;
 	}
 	&__img {
 		width: 10rem;
@@ -84,6 +80,7 @@ Multiple navbar
 	background-color: #fff;
 	transition: all 0.3s case 0s;
 	visibility: hidden;
+	z-index: 9999;
 	&-nav {
 		display: flex;
 		flex-wrap: wrap;
@@ -167,10 +164,6 @@ nav > ul > li > ul > li > ul {
 	top: 0;
 	display: none;
 }
-.navbar {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
 
 /* ===============
 Header M- Queries
@@ -187,6 +180,12 @@ Header M- Queries
 		font-weight: 700;
 		padding: 1rem 1rem;
 		border-radius: 0.3rem;
+	}
+}
+@media screen and (max-width: 991px) {
+	.navbar {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -224,5 +223,24 @@ Header M- Queries
 		font-size: 1rem;
 		padding: 1rem 1.4rem;
 		margin-left: 1rem;
+	}
+}
+
+/* ===============
+multiple - navbar M-Q
+============== */
+
+@media screen and (max-width: 991px) {
+	.multiple {
+		img {
+			width: 5rem;
+		}
+		&-nav {
+			display: flex;
+			flex-direction: column;
+		}
+		&__item {
+			display: flex;
+		}
 	}
 }
